@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2020/11/08/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>使用 markdown 嵌入图片</title>
+    <url>/2020/11/08/%E4%BD%BF%E7%94%A8-markdown-%E5%B5%8C%E5%85%A5%E5%9B%BE%E7%89%87/</url>
+    <content><![CDATA[<p><a href="https://hexo.io/docs/asset-folders">Asset Folders</a></p>
+<p><img src="/2020/11/08/%E4%BD%BF%E7%94%A8-markdown-%E5%B5%8C%E5%85%A5%E5%9B%BE%E7%89%87/image.png" alt="a image"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>搭建 Hexo NexT Github Pages 个人博客</title>
+    <url>/2020/11/08/%E6%90%AD%E5%BB%BA-Hexo-NexT-Github-Pages-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<p><strong>Hexo</strong></p>
+<p><a href="https://hexo.io/docs/">Overview</a></p>
+<p><a href="https://hexo.io/docs/setup">Setup</a></p>
+<p><a href="https://hexo.io/docs/one-command-deployment">One-Command Deployment</a></p>
+<p><strong>NexT</strong></p>
+<p><a href="https://theme-next.js.org/docs/getting-started/#NexT-Installation">NexT Installation</a></p>
+<p><strong>问题总结</strong></p>
+<p><em>GitHub Pages js css 404</em></p>
+<blockquote>
+<p>Create a repo named <strong>username.github.io</strong>, where username is your username on GitHub. If you have already uploaded to other repo, rename the repo instead.</p>
+</blockquote>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">&lt;repository</span> <span class="string">url&gt;</span> <span class="comment"># https://github.com/&lt;username&gt;/&lt;username&gt;.github.io.git</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>为 Windows 终端配置 HTTP 代理</title>
+    <url>/2020/11/08/%E4%B8%BA-Windows-%E7%BB%88%E7%AB%AF%E9%85%8D%E7%BD%AE-HTTP-%E4%BB%A3%E7%90%86/</url>
+    <content><![CDATA[<p><strong>cmd</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">set</span> http_proxy=http://127.0.0.1:7890</span><br><span class="line"><span class="built_in">set</span> https_proxy=http://127.0.0.1:7890</span><br></pre></td></tr></table></figure>
+
+<p><strong>Git Bash</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">export</span> http_proxy=http://127.0.0.1:7890</span><br><span class="line"><span class="built_in">export</span> https_proxy=http://127.0.0.1:7890</span><br></pre></td></tr></table></figure>
+
+<p><strong>PowerShell</strong></p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$Env:http_proxy</span>=<span class="string">&quot;http://127.0.0.1:7890&quot;</span></span><br><span class="line"><span class="variable">$Env:https_proxy</span>=<span class="string">&quot;http://127.0.0.1:7890&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p><em>注：以上所有命令是临时命令，退出终端后再次代理需要重新输入。</em></p>
+<p><strong>测试</strong></p>
+<p><a href="https://curl.haxx.se/windows/">curl for Windows</a></p>
+<p><a href="https://curl.se/docs/manual.html">curl tutorial</a></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl.exe http://google.com</span><br></pre></td></tr></table></figure>]]></content>
+      <tags>
+        <tag>Windows 终端</tag>
+        <tag>HTTP 代理</tag>
+      </tags>
+  </entry>
+</search>
