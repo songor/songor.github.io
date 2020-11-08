@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>为 Windows 终端配置 HTTP 代理</title>
+    <url>/2020/11/08/%E4%B8%BA-Windows-%E7%BB%88%E7%AB%AF%E9%85%8D%E7%BD%AE-HTTP-%E4%BB%A3%E7%90%86/</url>
+    <content><![CDATA[<p><strong>cmd</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">set</span> http_proxy=http://127.0.0.1:7890</span><br><span class="line"><span class="built_in">set</span> https_proxy=http://127.0.0.1:7890</span><br></pre></td></tr></table></figure>
+
+<p><strong>Git Bash</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">export</span> http_proxy=http://127.0.0.1:7890</span><br><span class="line"><span class="built_in">export</span> https_proxy=http://127.0.0.1:7890</span><br></pre></td></tr></table></figure>
+
+<p><strong>PowerShell</strong></p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$Env:http_proxy</span>=<span class="string">&quot;http://127.0.0.1:7890&quot;</span></span><br><span class="line"><span class="variable">$Env:https_proxy</span>=<span class="string">&quot;http://127.0.0.1:7890&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p><em>注：以上所有命令是临时命令，退出终端后再次代理需要重新输入。</em></p>
+<p><strong>测试</strong></p>
+<p><a href="https://curl.haxx.se/windows/">curl for Windows</a></p>
+<p><a href="https://curl.se/docs/manual.html">curl tutorial</a></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl.exe http://google.com</span><br></pre></td></tr></table></figure>]]></content>
+      <tags>
+        <tag>Windows 终端</tag>
+        <tag>HTTP 代理</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2020/11/08/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -44,28 +66,6 @@
 ]]></content>
       <tags>
         <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>为 Windows 终端配置 HTTP 代理</title>
-    <url>/2020/11/08/%E4%B8%BA-Windows-%E7%BB%88%E7%AB%AF%E9%85%8D%E7%BD%AE-HTTP-%E4%BB%A3%E7%90%86/</url>
-    <content><![CDATA[<p><strong>cmd</strong></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">set</span> http_proxy=http://127.0.0.1:7890</span><br><span class="line"><span class="built_in">set</span> https_proxy=http://127.0.0.1:7890</span><br></pre></td></tr></table></figure>
-
-<p><strong>Git Bash</strong></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">export</span> http_proxy=http://127.0.0.1:7890</span><br><span class="line"><span class="built_in">export</span> https_proxy=http://127.0.0.1:7890</span><br></pre></td></tr></table></figure>
-
-<p><strong>PowerShell</strong></p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$Env:http_proxy</span>=<span class="string">&quot;http://127.0.0.1:7890&quot;</span></span><br><span class="line"><span class="variable">$Env:https_proxy</span>=<span class="string">&quot;http://127.0.0.1:7890&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p><em>注：以上所有命令是临时命令，退出终端后再次代理需要重新输入。</em></p>
-<p><strong>测试</strong></p>
-<p><a href="https://curl.haxx.se/windows/">curl for Windows</a></p>
-<p><a href="https://curl.se/docs/manual.html">curl tutorial</a></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl.exe http://google.com</span><br></pre></td></tr></table></figure>]]></content>
-      <tags>
-        <tag>Windows 终端</tag>
-        <tag>HTTP 代理</tag>
       </tags>
   </entry>
 </search>
