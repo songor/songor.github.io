@@ -24,22 +24,21 @@
     var CONFIG = {"hostname":"songor.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.0.2","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
 
-  <meta name="description" content="Asset Folders">
+  <meta name="description" content="UseStreamToConvertBetweenMapAndList">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用 markdown 嵌入图片">
-<meta property="og:url" content="https://songor.github.io/2020/11/08/%E4%BD%BF%E7%94%A8-markdown-%E5%B5%8C%E5%85%A5%E5%9B%BE%E7%89%87/index.html">
+<meta property="og:title" content="使用 Java8 Stream 在 Map 和 List 之间转换">
+<meta property="og:url" content="https://songor.github.io/2020/11/11/%E4%BD%BF%E7%94%A8-Java8-Stream-%E5%9C%A8-Map-%E5%92%8C-List-%E4%B9%8B%E9%97%B4%E8%BD%AC%E6%8D%A2/index.html">
 <meta property="og:site_name" content="Hi, I&#39;m Chen">
-<meta property="og:description" content="Asset Folders">
+<meta property="og:description" content="UseStreamToConvertBetweenMapAndList">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://songor.github.io/2020/11/08/%E4%BD%BF%E7%94%A8-markdown-%E5%B5%8C%E5%85%A5%E5%9B%BE%E7%89%87/image.png">
-<meta property="article:published_time" content="2020-11-08T06:51:31.000Z">
-<meta property="article:modified_time" content="2020-11-08T06:55:38.317Z">
+<meta property="article:published_time" content="2020-11-10T17:18:53.000Z">
+<meta property="article:modified_time" content="2020-11-10T17:20:25.210Z">
 <meta property="article:author" content="陈松瑜">
+<meta property="article:tag" content="Java8">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://songor.github.io/2020/11/08/%E4%BD%BF%E7%94%A8-markdown-%E5%B5%8C%E5%85%A5%E5%9B%BE%E7%89%87/image.png">
 
 
-<link rel="canonical" href="https://songor.github.io/2020/11/08/%E4%BD%BF%E7%94%A8-markdown-%E5%B5%8C%E5%85%A5%E5%9B%BE%E7%89%87/">
+<link rel="canonical" href="https://songor.github.io/2020/11/11/%E4%BD%BF%E7%94%A8-Java8-Stream-%E5%9C%A8-Map-%E5%92%8C-List-%E4%B9%8B%E9%97%B4%E8%BD%AC%E6%8D%A2/">
 
 
 <script class="page-configurations">
@@ -52,7 +51,7 @@
   };
 </script>
 
-  <title>使用 markdown 嵌入图片 | Hi, I'm Chen</title>
+  <title>使用 Java8 Stream 在 Map 和 List 之间转换 | Hi, I'm Chen</title>
   
 
 
@@ -277,7 +276,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://songor.github.io/2020/11/08/%E4%BD%BF%E7%94%A8-markdown-%E5%B5%8C%E5%85%A5%E5%9B%BE%E7%89%87/">
+    <link itemprop="mainEntityOfPage" href="https://songor.github.io/2020/11/11/%E4%BD%BF%E7%94%A8-Java8-Stream-%E5%9C%A8-Map-%E5%92%8C-List-%E4%B9%8B%E9%97%B4%E8%BD%AC%E6%8D%A2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/uploads/avatar.png">
@@ -290,7 +289,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          使用 markdown 嵌入图片
+          使用 Java8 Stream 在 Map 和 List 之间转换
         </h1>
 
         <div class="post-meta-container">
@@ -302,7 +301,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2020-11-08 14:51:31 / Modified: 14:55:38" itemprop="dateCreated datePublished" datetime="2020-11-08T14:51:31+08:00">2020-11-08</time>
+      <time title="Created: 2020-11-11 01:18:53 / Modified: 01:20:25" itemprop="dateCreated datePublished" datetime="2020-11-11T01:18:53+08:00">2020-11-11</time>
     </span>
 
   
@@ -315,8 +314,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p><a target="_blank" rel="noopener" href="https://hexo.io/docs/asset-folders">Asset Folders</a></p>
-<p><img src="/2020/11/08/%E4%BD%BF%E7%94%A8-markdown-%E5%B5%8C%E5%85%A5%E5%9B%BE%E7%89%87/image.png" alt="a image"></p>
+        <p><a target="_blank" rel="noopener" href="https://github.com/songor/blog-snippet/blob/master/src/main/java/com/songor/blog/snippet/java8/UseStreamToConvertBetweenMapAndList.java">UseStreamToConvertBetweenMapAndList</a></p>
 
     </div>
 
@@ -325,19 +323,19 @@
     
 
     <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Java8/" rel="tag"><i class="fa fa-tag"></i> Java8</a>
+          </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2020/11/08/%E4%B8%BA-Windows-%E7%BB%88%E7%AB%AF%E9%85%8D%E7%BD%AE-HTTP-%E4%BB%A3%E7%90%86/" rel="prev" title="为 Windows 终端配置 HTTP 代理">
-                  <i class="fa fa-chevron-left"></i> 为 Windows 终端配置 HTTP 代理
+                <a href="/2020/11/10/%E4%BD%BF%E7%94%A8-Java8-Stream-%E6%9B%BF%E4%BB%A3%E5%B5%8C%E5%A5%97-for-%E5%BE%AA%E7%8E%AF/" rel="prev" title="使用 Java8 Stream 替代嵌套 for 循环">
+                  <i class="fa fa-chevron-left"></i> 使用 Java8 Stream 替代嵌套 for 循环
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2020/11/10/%E4%BD%BF%E7%94%A8-Java8-Stream-%E6%9B%BF%E4%BB%A3%E5%B5%8C%E5%A5%97-for-%E5%BE%AA%E7%8E%AF/" rel="next" title="使用 Java8 Stream 替代嵌套 for 循环">
-                  使用 Java8 Stream 替代嵌套 for 循环 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
